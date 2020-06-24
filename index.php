@@ -7,8 +7,7 @@
         <div class="inner cover">
 			<center>
           <h2><i class="fa fa-globe"></i></h2>
-            <h1>tel.my.id - Whois </h1>
-              <h4>Free Whois Service For All</h4>
+              <h4>Free Whois Service</h4>
 			</center>
               <div class="row">
             <div class="col-lg-12">
@@ -16,7 +15,7 @@
         <div class="input-group input-group-lg">
       <input type="text" class="form-control"  placeholder="Search for domain or IP..." name="domain" id="domain" value="<?=$domain;?>"> 
     <span class="input-group-btn">
-  <input type="submit" class="btn btn-shorten" value="lookup !" title="Pancal!">
+  <input type="submit" class="btn btn-shorten" value="Pancal !" title="Pancal!">
 </span>
 </form>
   </div>
