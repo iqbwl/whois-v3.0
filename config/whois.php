@@ -208,6 +208,7 @@ $whoisservers = array(
   "google" => "whois.nic.google", // .google
   "best" => "whois.nic.best", // .best
   "click" => "whois.nic.click", // .click
+  "page" => "whois.nic.page", // .page
   "yu" => "whois.ripe.net");
 
 function LookupDomain($domain){
