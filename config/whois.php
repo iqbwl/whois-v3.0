@@ -211,6 +211,7 @@ $whoisservers = array(
   "page" => "whois.nic.page", // .page
   "dev" => "whois.nic.dev", // .dev
   "zone" => "whois.nic.zone", // .zone
+  "link" => "whois.uniregistry.net", // .zone
   "yu" => "whois.ripe.net");
 
 function LookupDomain($domain){
