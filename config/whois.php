@@ -1,7 +1,7 @@
 <?php
 
 /*************************************************************************
-                        Data Domain WHOIS Lookup 
+                        Data Domain WHOIS Lookup
 ==========================================================================
 Author:      Muhammad Rifky Abimayu
 Web Site:    https://www.mexious.net
@@ -18,10 +18,10 @@ $whoisservers = array(
   "ac" => "whois.nic.ac", // Ascension Island
   "ae" => "whois.nic.ae", // United Arab Emirates
   "tech" => "whois.nic.tech", // tech domain
-  "tk" => "whois.freenom.com", 
-  "gq" => "whois.dominio.gq", 
+  "tk" => "whois.freenom.com",
+  "gq" => "whois.dominio.gq",
   "ga" => "whois.dot.ga", // ga - Gabon
-  "id" => "whois.id", // id - Indonesia 
+  "id" => "whois.id", // id - Indonesia
   "club" => "whois.nic.club", // club domain
   "cloud" => "whois.nic.cloud", // cloud domain
   "host" => "whois.nic.host", // host domain
@@ -215,7 +215,9 @@ $whoisservers = array(
   "online" => "whois.nic.online", // .online
   "wtf" => "whois.nic.wtf", // .wtf
   "tours" => "whois.nic.tours", // .tours
-  "yu" => "whois.ripe.net");
+  "yu" => "whois.ripe.net", // .yu
+  "art" => "whois.nic.art",
+  "live" => "whois.nic.live");
 
 function LookupDomain($domain){
   global $whoisservers;
@@ -301,7 +303,7 @@ function QueryWhoisServer($whoisserver, $domain) {
     $rows = explode("\n", $out);
     foreach($rows as $row) {
       $row = trim($row);
-      if(($row != '') && ($row{0} != '#') && ($row{0} != '%')) {
+      if(($row != '') && ($row[0] != '#') && ($row[0] != '%')) {
         $res .= $row."\n";
       }
     }
